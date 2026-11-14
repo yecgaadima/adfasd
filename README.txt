@@ -16,3 +16,10 @@ app/layout.tsx — метаданные и шрифты
 app/globals.css — стили Tailwind
 
 Tailwind уже подключен. 
+
+
+Чат для багов и идей (расширение Telegram)
+Страница: /chat (без входа). API: /api/messages
+Без настройки сообщения хранятся в памяти сервера (на Vercel могут пропадать).
+Для постоянного хранения: на Vercel добавь Upstash Redis (Storage → Marketplace)
+и переменные UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN.
